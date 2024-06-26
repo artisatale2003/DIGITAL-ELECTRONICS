@@ -1,0 +1,114 @@
+|DUT
+input_vector[0] => mux_4task:add_instance.s2
+input_vector[1] => mux_4task:add_instance.s1
+input_vector[2] => mux_4task:add_instance.in4
+input_vector[3] => mux_4task:add_instance.in3
+input_vector[4] => mux_4task:add_instance.in2
+input_vector[5] => mux_4task:add_instance.in1
+output_vector[0] << mux_4task:add_instance.out1
+
+
+|DUT|mux_4task:add_instance
+in1 => mux_task:inst1.in1
+in2 => mux_task:inst1.in2
+in3 => mux_task:inst2.in1
+in4 => mux_task:inst2.in2
+s1 => mux_task:inst3.s
+s2 => mux_task:inst1.s
+s2 => mux_task:inst2.s
+out1 <= mux_task:inst3.out1
+
+
+|DUT|mux_4task:add_instance|mux_task:inst1
+in1 => AND_2:inst2.A
+in2 => AND_2:inst3.A
+s => INVERTER:inst1.A
+s => AND_2:inst3.B
+out1 <= OR_2:inst4.Y
+
+
+|DUT|mux_4task:add_instance|mux_task:inst1|INVERTER:inst1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst1|AND_2:inst2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst1|AND_2:inst3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst1|OR_2:inst4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst2
+in1 => AND_2:inst2.A
+in2 => AND_2:inst3.A
+s => INVERTER:inst1.A
+s => AND_2:inst3.B
+out1 <= OR_2:inst4.Y
+
+
+|DUT|mux_4task:add_instance|mux_task:inst2|INVERTER:inst1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst2|AND_2:inst2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst2|AND_2:inst3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst2|OR_2:inst4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst3
+in1 => AND_2:inst2.A
+in2 => AND_2:inst3.A
+s => INVERTER:inst1.A
+s => AND_2:inst3.B
+out1 <= OR_2:inst4.Y
+
+
+|DUT|mux_4task:add_instance|mux_task:inst3|INVERTER:inst1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst3|AND_2:inst2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst3|AND_2:inst3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux_4task:add_instance|mux_task:inst3|OR_2:inst4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
