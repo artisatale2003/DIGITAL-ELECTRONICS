@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+entity decoder_2 is
+ port(A1,A2,A3,E:in std_logic;
+      Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7 :out std_logic);
+      end entity;
+ 
+architecture struct of decoder_2 is
+ signal sig1, sig2, sig3: std_logic;
+ component decoder_1 is
+ port(A1,A2,E:in std_logic;
+      Y0,Y1,Y2,Y3 :out std_logic);
+      end component;
+inst1:INVERTER PORT map(A=>A3,Y=>sig1);
+inst2:AND_2  PORT map(A=>A3, B=>E,Y=> sig2);
+inst3:AND_2  PORT map(A=>E, B=>sig1,Y=> sig3);
+inst4:decoder_1  PORT map(A=>A2, B=>A1,C=>sig2,Y=> Y4);
+inst5:decoder_1  PORT map(A=>A2, B=>A1,C=>sig2,Y=> Y5);
+inst6:decoder_1  PORT map(A=>A2, B=>A1,C=>sig2,Y=> Y6);
+inst7:decoder_1  PORT map(A=>A2, B=>A1,C=>sig2,Y=> Y7);	
+inst8:decoder_1  PORT map(A=>A2, B=>A1,C=>sig3,Y=> Y0);
+inst9:decoder_1  PORT map(A=>A2, B=>A1,C=>sig3,Y=> Y1);
+inst10:decoder_1  PORT map(A=>A2, B=>A1,C=>sig3,Y=> Y2);
+inst11:decoder_1  PORT map(A=>A2, B=>A1,C=>sig3,Y=> Y3);
+end struct;
