@@ -1,0 +1,24 @@
+|DUT
+input_vector[0] => MUX4behavior:add_instance.S[0]
+input_vector[1] => MUX4behavior:add_instance.S[1]
+input_vector[2] => MUX4behavior:add_instance.A[0]
+input_vector[3] => MUX4behavior:add_instance.A[1]
+input_vector[4] => MUX4behavior:add_instance.A[2]
+input_vector[5] => MUX4behavior:add_instance.A[3]
+output_vector[0] <= MUX4behavior:add_instance.Y
+
+
+|DUT|MUX4behavior:add_instance
+A[0] => Y.DATAB
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAA
+S[0] => Equal0.IN3
+S[0] => Equal1.IN3
+S[0] => Equal2.IN3
+S[1] => Equal0.IN2
+S[1] => Equal1.IN2
+S[1] => Equal2.IN2
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

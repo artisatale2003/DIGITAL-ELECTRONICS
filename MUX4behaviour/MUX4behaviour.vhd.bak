@@ -1,0 +1,41 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MUX2behavior is
+	port(A : in std_logic_vector(3 downto 0);
+		  S : in std_logic_vector(1 downto 0);
+		  Y : out std_logic_vector(0));
+end entity;
+
+architecture behavior of MUX2behavior is
+	
+	signal sel : unsigned(1 downto 0);
+	
+	begin
+	
+	
+	p1 : process(S)
+	
+	begin
+	
+	sel <= unsigned(S);
+	
+	end process p1;
+	
+	p2 : process(A,S)
+	
+	begin
+	
+	if(sel = 0) then
+		Y <= A(0);
+	else if (sel = 1)
+		Y <= A(1);
+	else if (sel = 2)
+		Y <= A(2);
+	else if (sel = 3)
+		Y <= A(3);
+	end if;
+	
+	end process p2;
+	
+end architecture behavior;
