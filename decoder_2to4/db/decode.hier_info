@@ -1,0 +1,85 @@
+|DUT
+input_vector[0] => decode:add_instance.E
+input_vector[1] => decode:add_instance.A1
+input_vector[2] => decode:add_instance.A2
+output_vector[0] << decode:add_instance.Y0
+output_vector[1] << decode:add_instance.Y1
+output_vector[2] << decode:add_instance.Y2
+output_vector[3] << decode:add_instance.Y3
+
+
+|DUT|decode:add_instance
+A1 => INVERTER:inst1.A
+A1 => AND_2:inst5.B
+A1 => AND_2:inst9.B
+A2 => INVERTER:inst2.A
+A2 => AND_2:inst7.A
+A2 => AND_2:inst9.A
+E => AND_2:inst4.A
+E => AND_2:inst6.A
+E => AND_2:inst8.A
+E => AND_2:inst10.A
+Y0 <= AND_2:inst4.Y
+Y1 <= AND_2:inst6.Y
+Y2 <= AND_2:inst8.Y
+Y3 <= AND_2:inst10.Y
+
+
+|DUT|decode:add_instance|INVERTER:inst1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|decode:add_instance|INVERTER:inst2
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|decode:add_instance|AND_2:inst3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|decode:add_instance|AND_2:inst4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|decode:add_instance|AND_2:inst5
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|decode:add_instance|AND_2:inst6
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|decode:add_instance|AND_2:inst7
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|decode:add_instance|AND_2:inst8
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|decode:add_instance|AND_2:inst9
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|decode:add_instance|AND_2:inst10
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
