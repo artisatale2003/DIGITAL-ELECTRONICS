@@ -1,0 +1,240 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/qaurtus/sequencegen/simulation/modelsim
+Edff_reset
+Z1 w1718197852
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8E:/qaurtus/sequencegen/sequencegen.vhd
+Z5 FE:/qaurtus/sequencegen/sequencegen.vhd
+l0
+L29 1
+V@kd>Sl^ik4BM@fnkh9YAU2
+!s100 f`gCNWX0ii3_NiBMSNM5?1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1718197909
+!i10b 1
+Z8 !s108 1718197909.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/qaurtus/sequencegen/sequencegen.vhd|
+Z10 !s107 E:/qaurtus/sequencegen/sequencegen.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+DEx4 work 9 dff_reset 0 22 @kd>Sl^ik4BM@fnkh9YAU2
+!i122 1
+l32
+L31 11
+VJ1HL40cgDkBD<]a5363bG0
+!s100 fWld6iokhBf6mVDEz][Jd0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff_set
+R1
+R2
+R3
+!i122 1
+R0
+R4
+R5
+l0
+L13 1
+VBFjbn5lFBFJlfXRI=zD>[3
+!s100 A3Tfe2k_l`na<MJhF=D?S3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 7 dff_set 0 22 BFjbn5lFBFJlfXRI=zD>[3
+!i122 1
+l16
+L15 11
+VB1i`E>IXnZ9co2@JOR>W82
+!s100 IY7mkjCZAa^;^:`gH0<0O0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1718192930
+R2
+R3
+!i122 0
+R0
+Z14 8E:/qaurtus/sequencegen/DUT.vhdl
+Z15 FE:/qaurtus/sequencegen/DUT.vhdl
+l0
+L4 1
+VAY;;^O@Qf4f]zLPRYJ_3N1
+!s100 <ghfJ2ncJ<IB5WdWX:TD@0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|E:/qaurtus/sequencegen/DUT.vhdl|
+Z17 !s107 E:/qaurtus/sequencegen/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 AY;;^O@Qf4f]zLPRYJ_3N1
+!i122 0
+l17
+L9 16
+V]cY;nUF@lLRb<_:a6155V3
+!s100 [m5z2iZ1lm?E2T@Sb86Jl0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Pflipflops
+R2
+R3
+!i122 1
+R1
+R0
+R4
+R5
+l0
+L4 1
+VB@`WfR>eJG_]QKPP=Rnj@3
+!s100 Iiln`MCI36[:X7n0=1Gni2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esequencegen
+R1
+Z18 DPx4 work 9 flipflops 0 22 B@`WfR>eJG_]QKPP=Rnj@3
+R2
+R3
+!i122 1
+R0
+R4
+R5
+l0
+L50 1
+V8Oea0@2;75GjjA3eQ9FES3
+!s100 >2=`L1iLCzde9jf`YGk<00
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Astruct
+R18
+R2
+R3
+DEx4 work 11 sequencegen 0 22 8Oea0@2;75GjjA3eQ9FES3
+!i122 1
+l62
+L54 19
+VMHo=mdJB`@VVF2TSf7Q`V1
+!s100 @c`C1GdE`_2fYKWYg@LE03
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z19 w1718191097
+R3
+R2
+!i122 2
+R0
+Z20 8E:/qaurtus/sequencegen/Testbench.vhdl
+Z21 FE:/qaurtus/sequencegen/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+Z22 !s110 1718197910
+!i10b 1
+Z23 !s108 1718197910.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|E:/qaurtus/sequencegen/Testbench.vhdl|
+!s107 E:/qaurtus/sequencegen/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+Vf3hR06N2RGUODQcza;L>I3
+!s100 dD0YcHLNVK^T<[OGFHoM12
+R6
+31
+R22
+!i10b 1
+R23
+R24
+Z25 !s107 E:/qaurtus/sequencegen/Testbench.vhdl|
+!i113 1
+R11
+R12
