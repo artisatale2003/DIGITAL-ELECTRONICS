@@ -1,0 +1,14 @@
+|DUT
+input_vector[0] => mux2beh:add_instance.s
+input_vector[1] => mux2beh:add_instance.a0
+input_vector[2] => mux2beh:add_instance.a1
+output_vector[0] <= mux2beh:add_instance.Y
+
+
+|DUT|mux2beh:add_instance
+a0 => Y.DATAA
+a1 => Y.DATAB
+s => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
