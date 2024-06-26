@@ -1,0 +1,11 @@
+
+State Machine - |DUT|sequence_det:add_instance|current_state
+Name current_state.q7 current_state.q6 current_state.q5 current_state.q4 current_state.q3 current_state.q2 current_state.q1 current_state.q0 
+current_state.q0 0 0 0 0 0 0 0 0 
+current_state.q1 0 0 0 0 0 0 1 1 
+current_state.q2 0 0 0 0 0 1 0 1 
+current_state.q3 0 0 0 0 1 0 0 1 
+current_state.q4 0 0 0 1 0 0 0 1 
+current_state.q5 0 0 1 0 0 0 0 1 
+current_state.q6 0 1 0 0 0 0 0 1 
+current_state.q7 1 0 0 0 0 0 0 1 
