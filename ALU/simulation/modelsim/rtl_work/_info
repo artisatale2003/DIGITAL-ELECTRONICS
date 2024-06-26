@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/qaurtus/ALU/simulation/modelsim
+Ealu
+Z1 w1718165890
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8E:/qaurtus/ALU/ALU.vhd
+Z6 FE:/qaurtus/ALU/ALU.vhd
+l0
+L5 1
+VSnGT`R?>HB_BJDkKEelDA0
+!s100 6`>F_nI]3XnhF2iFhFdgO1
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1718170284
+!i10b 1
+Z9 !s108 1718170283.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|E:/qaurtus/ALU/ALU.vhd|
+Z11 !s107 E:/qaurtus/ALU/ALU.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 SnGT`R?>HB_BJDkKEelDA0
+!i122 1
+l49
+L14 53
+Vi1o?]`f<>BJkIEXYeda0d2
+!s100 WASV471eiTL86RK[bPXn^3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edut
+R1
+R3
+R4
+!i122 0
+R0
+Z14 8E:/qaurtus/ALU/DUT.vhdl
+Z15 FE:/qaurtus/ALU/DUT.vhdl
+l0
+L8 1
+VVb0aahT?^M8>`4g6jfXJZ1
+!s100 DF=A7V:bSHXmB@nZ[zjVA0
+R7
+31
+Z16 !s110 1718170283
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|E:/qaurtus/ALU/DUT.vhdl|
+Z18 !s107 E:/qaurtus/ALU/DUT.vhdl|
+!i113 1
+R12
+R13
+Adutwrap
+R3
+R4
+DEx4 work 3 dut 0 22 Vb0aahT?^M8>`4g6jfXJZ1
+!i122 0
+l24
+L13 18
+V^jj3E?PlJ@kDOa00Ul<401
+!s100 :HPOC2j`J=XPGNAC[IUiK2
+R7
+31
+R16
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Etestbench
+R1
+R4
+R3
+!i122 2
+R0
+Z19 8E:/qaurtus/ALU/Testbench.vhdl
+Z20 FE:/qaurtus/ALU/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R7
+31
+R8
+!i10b 1
+Z21 !s108 1718170284.000000
+Z22 !s90 -reportprogress|300|-93|-work|work|E:/qaurtus/ALU/Testbench.vhdl|
+!s107 E:/qaurtus/ALU/Testbench.vhdl|
+!i113 1
+R12
+R13
+Abehave
+R4
+R3
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+VB?ln9WA:09P=<a20E;=5B3
+!s100 na67H3I6:f8^4lno><LSC2
+R7
+31
+R8
+!i10b 1
+R21
+R22
+Z23 !s107 E:/qaurtus/ALU/Testbench.vhdl|
+!i113 1
+R12
+R13

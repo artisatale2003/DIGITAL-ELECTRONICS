@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.all;
+library work;
+use work.Gates.all;
+
+entity ALU is
+    Port ( A      : in  STD_LOGIC_VECTOR(3 downto 0);
+           B      : in  STD_LOGIC_VECTOR(3 downto 0);
+           Sel    : in  STD_LOGIC_VECTOR(1 downto 0);
+           Result : out STD_LOGIC_VECTOR(7 downto 0));
+end ALU;
+
+
+
+architecture Behavioral of ALU is
+begin
+    process(A, B, Sel)
+        variable shifted_result : std_logic_vector(3 downto 0);
+    begin
+        case Sel is
+            when "00" =>  
+                Result <= A & B;  
+
+            when "01" =>  
+                Result <= "0000" & (A - B); 
+
+            when "10" =>  
+                Result <= "0000" & (A xor B); 
+
+            when "11" =>  
+                shifted_result := A(3 downto 0);
+                if B(3) = '0' then  
+                    for i in 1 to to_integer(unsigned(B(1 downto 0))) loop
+                        shifted_result := shifted_result(2 downto 0) & '0';
+                    end loop;
+                else  
+                    for i in 1 to to_integer(unsigned(B(1 downto 0))) loop
+                        shifted_result := '0' & shifted_result(3 downto 1);
+                    end loop;
+                end if;
+                Result <= shifted_result;
+
+            when others =>
+                Result <= (others => '0');
+        end case;
+    end process;
+end Behavioral;
