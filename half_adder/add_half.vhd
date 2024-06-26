@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+
+entity add_half is
+ port(in1,in2:in std_logic;
+ sum, carry :out std_logic);
+ end entity;
+ 
+ architecture struct of add_half is
+   signal sig1,sig2,sig3: std_logic;
+ begin
+   inst1:NAND_2 PORT map(in1, in2, sig1);
+	inst2:NAND_2 PORT map(in1, sig1, sig2);
+	inst3:NAND_2 PORT map(sig1, in2, sig3);
+	inst4:NAND_2 PORT map(sig2, sig3, sum);
+	inst5:NAND_2 PORT map(sig1, sig1, carry);
+ end architecture;
